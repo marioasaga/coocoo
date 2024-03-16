@@ -29,9 +29,20 @@
       <a href="index.html"><img class="logo" src="img/Coocoo_logo1.png" alt=""></a>
       <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
-          <a href="index.html#product">商品一覧</a>
-          <a>安全へのこだわり</a>
-          <a>ご利用ガイド</a>
+        <a href="index.html#product">商品一覧</a>
+        <a href="safety.html">安全へのこだわり</a>
+        <a href="guide.html">ご利用ガイド</a>
+      </nav>
+      <!-- スマホ用ハンバーガーメニュー -->
+      <img id="menu-sp" src="img/bars.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+      <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+           src="img/Coocoo_logo1.png" alt="トップページに戻る"></a>
+      <a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">商品一覧 >></a>
+      <a class="menu" href="safety.html" onclick="document.getElementById('nav-sp').style.display = 'none'">安全へのこだわり >></a>
+      <a class="menu" href="guide.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ご利用ガイド >></a>
       </nav>
   </header>
   <!-- /header -->
@@ -259,7 +270,7 @@
         <img class="footer-logo" src="img/Coocoo_logo2.png" alt="">
       </a>
     </div>
-    <div>
+    <div class="footer-links">
       <a class="footer-link" href="index.html#product">商品一覧</a>
       <a class="footer-link" href="">安全へのこだわり</a>
       <a class="footer-link" href="">ご利用ガイド</a>
